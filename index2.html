@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic-Tac-Toe Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    canvas {
+      border: 2px solid #333;
+    }
+
+    #controls {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    #winner {
+      margin-top: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: green;
+    }
+
+    #reset {
+      padding: 10px 15px;
+      font-size: 1em;
+      background-color: #008cba;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="game">
+    <canvas width="300" height="300"></canvas>
+    <div id="controls">
+        <button id="undo">Undo</button>
+      <button id="reset">Reset Game</button>
+      <div id="winner"></div>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="tic-tac-toe.js"></script>
+</body>
+
+</html>
